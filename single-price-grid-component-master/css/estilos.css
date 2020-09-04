@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0px solid #000;
+}
+body{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    
+    background: ;
+}
+.container{
+    width: 50%;
+    margin: 8% auto;
+    border-radius: 10px;
+    background: paleturquoise;
+    
+}
+    /* MARGIN BOTTOM  */
+    
+.main-tittle__h2, 
+.main-tittle__h3, 
+.card-subscription__h3,
+.card-subscription__price,
+.card-subscription__description,
+.card-us__h3{
+    margin-bottom: 20px;
+}
+.main-tittle, .card-subscription, .card-us{
+    padding: 40px;
+    width: 100%;
+}
+    /* MAIN-TITTLE */
+
+.main-tittle{
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 1px 1px 10px  rgb(0, 0, 0, 0.1), -1px -1px 10px  rgb(0, 0, 0, 0.1);
+}
+.main-tittle__h2{
+    color: hsl(179, 62%, 43%);
+}
+.main-tittle__h3{
+    color: hsl(71, 73%, 54%);
+}
+.main-tittle__p{
+    line-height: 1.5em;
+    color: hsl(218, 22%, 67%);
+}
+    /* CARD-SECTION */
+
+.card-section{
+    display: flex;
+    
+}
+    /* CARD-SUBSCRIPTION*/
+
+.card-subscription{
+    background: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 10px;
+}
+.card-subscription__price{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.card-subscription__price>.text-small{
+   font-weight: 400;
+   color: hsl(204, 43%, 93%, 0.6);
+   font-size: 14px;
+}
+.card-subscription>.card-subscription__description{
+    color:   hsl(204, 43%, 93%);
+}
+.card-subscription__a{
+    display: block;
+    padding: 15px;
+    border-radius: 7px;
+    
+    background: hsl(71, 73%, 54%);
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+
+    box-shadow: 5px 5px 10px  rgb(0, 0, 0, 0.1);
+}
+.card-subscription__a:hover{
+    transform: scale(1.08);
+    transition: 300ms;
+    background: #FF3366;
+}
+
+    /* CARD-US */
+
+.card-us{
+    background: hsl(179, 62%, 43%, 0.8);
+    border-radius: 0 0 10px 0px;
+}
+.card-us__p{
+    color:   hsl(204, 43%, 93%, 0.7);
+    line-height: 1.4em;
+}
+    /* MEDIA QUERYS */
+
+@media only screen and (max-width: 800px){
+    .container{ 
+        width: 90%;
+        margin: 40px;
+    }
+    .card-section{
+        display: block;
+    }
+    .card-subscription{
+        border-radius: 0;
+    }
+    .card-us{
+        border-radius: 0 0 10px 10px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+}
